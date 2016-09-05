@@ -195,7 +195,6 @@ void BST::printTree(ostream& out) const
 
 int main()
 {
-	cout << "please intput  number : " << endl;
 	string line;
 	while (getline(cin, line))
 	{
@@ -207,15 +206,6 @@ int main()
 			bst.insert(tmp);
 		}
 		bst.printTree(cout);
-		cout << "please input remove number :" << endl;
-		while (cin >> tmp)
-		{
-			if (tmp == 0)
-				break;
-			bst.remove(tmp);
-			bst.printTree();
-		}
-		cout << "please intput  number : " << endl;
 	}
 
 }
